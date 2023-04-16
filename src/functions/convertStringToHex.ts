@@ -1,0 +1,1 @@
+export default (string: string)=>parseInt ( string.replace("#","0x"), 16 );
