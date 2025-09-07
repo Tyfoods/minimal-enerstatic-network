@@ -12,7 +12,7 @@ export default class EnerstaticNode {
   id: number;
   energySetPoint: number = 0;
   energyLevel:number = 0;
-  energyThreshold:number = 100;
+  energyThreshold:number = 10;
   isDead: Boolean = false;
   enerstaticNodes: {[key: number]: EnerstaticNode} = {}
   features: {
@@ -21,7 +21,7 @@ export default class EnerstaticNode {
 
   threeObj: THREE.Mesh;
   connectionPoints: number[] = [];
-  maxConnections: number = 2;
+  maxConnections: number = 4;
 
 	constructor(id: number, programDetails: MinimalEnerstaticProgram){
     this.enerstaticNodes = programDetails.enerstaticNodes

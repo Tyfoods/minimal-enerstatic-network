@@ -28,7 +28,6 @@ export default class MinimalEnerstaticProgram {
 
     perturbEvenNodesInNetwork = (perturbationStrength: number, positivePerturbation: Boolean)=>{
         // console.log(`Perturbing even nodes in network with ${positivePerturbation ? "+" : "-"}${perturbationStrength} strength`);
-        //Perturbation Probability - Probabilty of any given node being perturbed
         let perturbationCount = 0;
         Object.values(this.enerstaticNodes).forEach((node: EnerstaticNode)=>{
             if(node.isDead) return;
