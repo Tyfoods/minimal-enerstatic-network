@@ -1,4 +1,4 @@
-import isNumberInInterval from "./isNumberIninterval";
+import isNumberInInterval from "./isNumberInInterval";
 
 //ad hoc, but sometimes input is not in interval, so I will raise or lower the interval on the fly.
 const adHocFixInterval = (inpInterval: number[], input: number)=>{
